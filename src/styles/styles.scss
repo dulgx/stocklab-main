@@ -2,6 +2,15 @@ $primary-black: hsla(180, 3%, 7%, 1);
 $primary-green: hsla(165, 99%, 39%, 1);
 $white: hsla(0, 0%, 100%, 1);
 
+.container{
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
 
 nav {
     background: $primary-black;
@@ -12,8 +21,13 @@ nav {
     position: relative;
     justify-content: space-between;
 
-    #StocklabLogo {
-        height: 43.4px;
+    
+    .nav-link-container{
+        
+        #StocklabLogo {
+            height: 43.4px;
+            margin-right: 250px;
+        }
     }
 
     div {
@@ -38,6 +52,7 @@ nav {
             color: $white;
             font-size: 14px;
             font-weight: 400;
+            cursor: pointer;
         }
 
         #DownVector {

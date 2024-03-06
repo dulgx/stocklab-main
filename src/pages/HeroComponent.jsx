@@ -5,4 +5,4 @@ const HeroComponent = () => {
         </section>
     )
 }
-export default HeroComponent;
+export default HeroComponent

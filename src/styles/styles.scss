@@ -1,0 +1,69 @@
+$primary-black: hsla(180, 3%, 7%, 1);
+$primary-green: hsla(165, 99%, 39%, 1);
+$white: hsla(0, 0%, 100%, 1);
+
+
+nav {
+    background: $primary-black;
+    display: flex;
+    margin: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+    position: relative;
+    justify-content: space-between;
+
+    #StocklabLogo {
+        height: 43.4px;
+    }
+
+    div {
+        display: flex;
+        float: right;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        margin-right: 50px;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $white;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        #DownVector {
+            margin-left: 5px;
+            height: 8px;
+        }
+    }
+
+    div {
+        display: flex;
+
+        .social-links {
+            .social-logo {
+                height: 16px;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        #LoginButton {
+            border: 1px solid $primary-green;
+            height: 45px;
+            color: white;
+            width: 139px;
+            border-radius: 10px;
+            background-color: $primary-green;
+        }
+    }
+}

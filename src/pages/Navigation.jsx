@@ -10,20 +10,19 @@ const Navigation = () => {
 
     const [showNavbar, setShowNavbar] = useState(false);
 
-    const navbarShow = () =>{
+    const navbarShow = () => {
         setShowNavbar(!showNavbar);
     }
 
     return (
         <nav>
             <div className={`nav-elements  ${showNavbar && "active"}`}>
-                <ul className='nav-link-container'>
-                    <div>
-                        <li>
-                            <NavLink to="/"> <img id='StocklabLogo' src={stocklabLogo} alt="stocklab-logo" /></NavLink>
-                        </li>
-                    </div>
-                    <div>
+                <div>
+                    <NavLink to="/"> <img id='StocklabLogo' src={stocklabLogo} alt="stocklab-logo" /></NavLink>
+                </div>
+
+                <div>
+                    <ul className='nav-link-container'>
                         <li>
                             <NavLink to="aboutus">Бидний тухай</NavLink>
                         </li>
@@ -36,17 +35,16 @@ const Navigation = () => {
                         <li>
                             <NavLink to="/instructions">Заавар</NavLink>
                         </li>
-                    </div>
-                </ul>
-                <div>
+                    </ul>
+
                     <div className='social-links'>
                         <a href="#">
                             <img className='social-logo' src={facebookLogo} alt="facebook-logo" />
                         </a>
-                         <a href="#">
+                        <a href="#">
                             <img className='social-logo' src={instaLogo} alt="instagram-logo" />
                         </a>
-                    </div>        
+                    </div>
                     <button id='LoginButton'>Нэвтрэх</button>
                 </div>
             </div>

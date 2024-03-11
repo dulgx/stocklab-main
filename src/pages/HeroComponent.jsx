@@ -1,6 +1,7 @@
 import heroPerson from '../assets/hero-person.png';
 import Huvitsaatai from '../assets/frame-1.svg';
 import MarketCard from './MarketCard';
+import FooterPartnersComponent from './FooterPartnersComponent';
 
 const HeroComponent = () => {
     return (
@@ -11,11 +12,10 @@ const HeroComponent = () => {
                     <p>Та гар утсаараа үнэт цаасны дансаа нээлгэж хувьцаатай болоорой.</p>
                     <button>Дэлгэрэнгүй</button>
                 </div>
-                <div className='hero-image'>
-                    <img src={heroPerson} alt="hero-person" id='HeroPerson' />
-                </div>
+                <img src={heroPerson} alt="hero-person" id='HeroPerson' />
             </section>
             <MarketCard />
+            <FooterPartnersComponent />
         </>
     )
 }

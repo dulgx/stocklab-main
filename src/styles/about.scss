@@ -1,0 +1,103 @@
+$primary-black: hsla(180, 3%, 7%, 1);
+$primary-green: hsla(165, 99%, 39%, 1);
+$white: hsla(0, 0%, 100%, 1);
+
+.about-container {
+    color: $white;
+    width: 100%;
+
+    .ariljaand-oroltsoh {
+        background-color: $primary-green;
+        display: flex;
+        min-height: 132px;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../assets/line-ariljaand.png');
+        padding: 20px;
+
+        p {
+            width: 848px;
+            height: 54px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 20px;
+
+            b {
+                font-weight: 700;
+            }
+        }
+
+        #AriljaandButton {
+            height: 57px;
+            width: 258px;
+            background-color: $primary-green;
+            border: 2px solid #E6E8EC;
+            border-radius: 12px;
+            color: $white;
+            font-family: "Open Sans", sans-serif;
+            box-shadow: 0 0 20px rgba(230, 232, 236, 1);
+            letter-spacing: 2.1px;
+            cursor: pointer;
+        }
+    }
+
+
+    .about-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+
+        .bidnii-tuhai-text {
+            width: 288px;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 32px;
+                font-weight: 600;
+            }
+
+            .custom-border {
+                width: 208px;
+                border: 1px solid;
+                border-image-source: linear-gradient(90deg, #01C696 0.09%, rgba(1, 198, 150, 0) 100.09%);
+                border-image-slice: 1;
+            }
+        }
+
+        .about-long-text {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 683px;
+            padding-top: 20px;
+
+            h1 {
+                font-size: 24px;
+                font-weight: 500;
+                font-family: 'Manrope', sans-serif;
+                color: $primary-green;
+            }
+
+            p {
+                line-height: 32px;
+                font-size: 16px;
+            }
+        }
+
+        #slide-button {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border-style: none;
+            margin: 3px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: $primary-green;
+        }
+    }
+}

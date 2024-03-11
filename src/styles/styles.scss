@@ -144,7 +144,23 @@ nav {
     display: flex;
     margin-top: 55px;
     margin-bottom: 20px;
+    overflow: hidden;
 
+    .marquee-container {
+        animation: marquee 8s linear infinite;
+
+
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-250%);
+        }
+    }
 
     #NoBackground {
         background-color: $primary-black;
@@ -220,6 +236,7 @@ nav {
             }
         }
     }
+
 
 }
 

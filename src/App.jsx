@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/styles.scss';
+import './styles/about.scss'
 import Navigation from './pages/Navigation';
 import HeroComponent from './pages/HeroComponent';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

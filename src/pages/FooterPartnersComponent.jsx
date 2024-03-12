@@ -1,6 +1,3 @@
-import backgroundLayer from '../assets/Layer-hamtragch.png';
-import frameRight from '../assets/Frame2-hamtragch.png';
-import frameLeft from '../assets/Frame1-hamtragch.png';
 import sendlyLogo from '../assets/sendlyLogodark.png';
 import hipayLogo from '../assets/hipay-logo.png';
 import mutsaehLogo from '../assets/mutsaeh-logo.png';
@@ -32,36 +29,40 @@ const FooterPartnersComponent = () => {
                         <img src={sendlyLogo} alt="sendly logo" className='partners-logo ' />
                         <img src={sanzohitsuulahLogo} alt="sanhuugiin zohitsuulah logo" className='partners-logo ' />
                         <img src={mglStockExchange} alt="mgl-stock-exchange" className='partners-logo' id='biglogo' />
+            
+                        <img src={unettsaastuvLogo} alt="Unet tsaas tuv logo" className='partners-logo ' />
+                        <img src={hipayLogo} alt="hipay logo" className='partners-logo ' />
                         <img src={mutsaehLogo} alt="mutsaeh logo" className='partners-logo' id='biglogo' />
-                        <img src={unettsaastuvLogo} alt="Unet tsaas tuv logo" className='partners-logo' />
+                        <img src={unettsaastuvLogo} alt="Unet tsaas tuv logo" className='partners-logo ' />
+                        <img src={sendlyLogo} alt="sendly logo" className='partners-logo ' />
+                        <img src={sanzohitsuulahLogo} alt="sanhuugiin zohitsuulah logo" className='partners-logo ' />
                         <img src={mglStockExchange} alt="mgl-stock-exchange" className='partners-logo' id='biglogo' />
                     </div>
-
                 </div>
             </div>
-            <div className="footer">
+
+            <div className='footer-section'>
                 <div className="footer-container">
-                    <div>
-                        <img src={stocklabLogo} alt="stocklab" />
-                    </div>
-                    <div className='contact-info'>
-                        <span>
-                            <img src={mobileIcon} alt="mobile icon" />
-                            <p>7777-5155</p>
-                        </span>
-                        <span>
-                            <img src={emailIcon} alt="email icon" />
-                            <p>contact@stocklab.mn</p>
-                        </span>
-                        <span>Даваа-Баасан 9:00-18:00</span>
-                        <span>Монгол улс, Улаанбаатар хот, Чингэлтэй дүүрэг, 1 хороо, Жуулчны гудамж, Арт хаус центр, 5 давхар</span>
+                        <div>
+                            <img src={stocklabLogo} alt="stocklab" />
+                        </div>
+                        <div className='contact-info'>
+                            <div>
+                                <img src={mobileIcon} alt="mobile icon" />
+                                <p>7777-5155</p>
+                            </div>
+                            <div>
+                                <img src={emailIcon} alt="email icon" />
+                                <p>contact@stocklab.mn</p>
+                            </div>
+                            <div>Даваа-Баасан <br />9:00-18:00</div>
+                            <div>Монгол улс, Улаанбаатар хот, Чингэлтэй дүүрэг, 1 хороо, Жуулчны гудамж, Арт хаус центр, 5 давхар</div>
                     </div>
                 </div>
             </div>
             <div className="copyright">
                 <p>2022 © StockLab. ALL Rights Reserved.</p>
-                <h1>ХУУЛЬ, ЭРХ ЗҮЙ</h1>
-                <h1>ХОЛБОО БАРИХ</h1>
+                <p>ХУУЛЬ, ЭРХ ЗҮЙ &nbsp; &nbsp; &nbsp; ХОЛБОО БАРИХ</p>
             </div>
         </div>
     )

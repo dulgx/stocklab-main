@@ -149,7 +149,6 @@ nav {
     .marquee-container {
         animation: marquee 15s linear infinite;
 
-
     }
 
     @keyframes marquee {
@@ -261,9 +260,9 @@ nav {
 
 /*  Partners, footer component   */
 
-.partners-footer{
+.partners-footer {
 
-    .partners-container{
+    .partners-container {
         display: flex;
         height: 450px;
         width: 100%;
@@ -275,8 +274,10 @@ nav {
         background-repeat: no-repeat;
         background-size: 220px, 380px, cover;
         background-position: right, top left;
+
     }
-    #HamtragchBaiguullaga{
+
+    #HamtragchBaiguullaga {
         margin: 20px;
         display: flex;
         flex-direction: column;
@@ -287,16 +288,60 @@ nav {
         font-weight: 500;
         line-height: 56px;
     }
-    .partners-logo-container{
+
+    .partners-logo-container {
         height: 180px;
         width: 100%;
         background-color: hsla(0, 0%, 100%, 0.5);
         display: flex;
-        align-items: center;
 
-        .partners-logo{
-            height: 50px;
-            margin-left: 80px;
+
+        .slide-container {
+            animation: marquee 25s linear infinite;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-around;
+
+            .partners-logo {
+                height: 45px;
+
+
+                @keyframes marquee {
+                    0% {
+                        transform: translateX(0%);
+                    }
+
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+            }
         }
+
+
+
+        #biglogo {
+            height: 85px;
+        }
+    }
+
+    .footer {
+        max-width: 1209px;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        color: $white;
+
+        .footer-container {
+            display: flex;
+
+            .contact-info {
+                width: 302px;
+
+            }
+        }
+
     }
 }

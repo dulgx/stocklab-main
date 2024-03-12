@@ -22,32 +22,40 @@ const FooterPartnersComponent = () => {
                     <span >ХАМТРАГЧ БАЙГУУЛЛАГУУД </span>
                     <img src={lineHamtragch} alt="line" />
                 </div>
-                
+
                 <div className='partners-logo-container'>
-                    <img src={unettsaastuvLogo} alt="Unet tsaas tuv logo" className='partners-logo'/>
-                    <img src={hipayLogo} alt="hipay logo" className='partners-logo'/>
-                    <img src={mutsaehLogo} alt="mutsaeh logo" className='partners-logo'/>
-                    <img src={unettsaastuvLogo} alt="Unet tsaas tuv logo" className='partners-logo'/>
-                    <img src={sendlyLogo} alt="sendly logo" className='partners-logo'/>
-                    <img src={sanzohitsuulahLogo} alt="sanhuugiin zohitsuulah logo" className='partners-logo'/>
-                    <img src={mglStockExchange} alt="mgl-stock-exchange" className='partners-logo'/>
-                    <img src={mutsaehLogo} alt="mutsaeh logo" className='partners-logo'/>
-                    <img src={unettsaastuvLogo} alt="Unet tsaas tuv logo" className='partners-logo'/>
+                    <div className="slide-container">
+                        <img src={unettsaastuvLogo} alt="Unet tsaas tuv logo" className='partners-logo ' />
+                        <img src={hipayLogo} alt="hipay logo" className='partners-logo ' />
+                        <img src={mutsaehLogo} alt="mutsaeh logo" className='partners-logo' id='biglogo' />
+                        <img src={unettsaastuvLogo} alt="Unet tsaas tuv logo" className='partners-logo ' />
+                        <img src={sendlyLogo} alt="sendly logo" className='partners-logo ' />
+                        <img src={sanzohitsuulahLogo} alt="sanhuugiin zohitsuulah logo" className='partners-logo ' />
+                        <img src={mglStockExchange} alt="mgl-stock-exchange" className='partners-logo' id='biglogo' />
+                        <img src={mutsaehLogo} alt="mutsaeh logo" className='partners-logo' id='biglogo' />
+                        <img src={unettsaastuvLogo} alt="Unet tsaas tuv logo" className='partners-logo' />
+                        <img src={mglStockExchange} alt="mgl-stock-exchange" className='partners-logo' id='biglogo' />
+                    </div>
+
                 </div>
             </div>
-            <div className="footer-container">
-                <img src={stocklabLogo} alt="stocklab" />
-                <div className='contact-info'>
-                    <span>
-                        <img src={mobileIcon} alt="mobile icon" />
-                        <p>7777-5155</p>
-                    </span>
-                    <span>
-                        <img src={emailIcon} alt="email icon" />
-                        <p>contact@stocklab.mn</p>
-                    </span>
-                    <span>Даваа-Баасан 9:00-18:00</span>
-                    <span>Монгол улс, Улаанбаатар хот, Чингэлтэй дүүрэг, 1 хороо, Жуулчны гудамж, Арт хаус центр, 5 давхар</span>
+            <div className="footer">
+                <div className="footer-container">
+                    <div>
+                        <img src={stocklabLogo} alt="stocklab" />
+                    </div>
+                    <div className='contact-info'>
+                        <span>
+                            <img src={mobileIcon} alt="mobile icon" />
+                            <p>7777-5155</p>
+                        </span>
+                        <span>
+                            <img src={emailIcon} alt="email icon" />
+                            <p>contact@stocklab.mn</p>
+                        </span>
+                        <span>Даваа-Баасан 9:00-18:00</span>
+                        <span>Монгол улс, Улаанбаатар хот, Чингэлтэй дүүрэг, 1 хороо, Жуулчны гудамж, Арт хаус центр, 5 давхар</span>
+                    </div>
                 </div>
             </div>
             <div className="copyright">

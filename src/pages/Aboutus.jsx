@@ -71,11 +71,15 @@ const HamtOlon = () => {
 
     return (
         <div className="hamt-olon-container">
-            <span id='text-hamtolon'>Хамт олон</span>
-            <div>
-                <span>Ажлын туршлага</span>
-                <p>Манай хамт олон санхүүгийн салбарт +15 жил ажилсан туршлагатай мэргэжилтнүүдээс бүрдсэн.</p>
+            <div className='first-container'>
+                <span id='text-hamtolon'>Хамт олон</span>
+                <div className="custom-border"></div>
+                <div>
+                    <span>Ажлын туршлага</span>
+                    <p>Манай хамт олон санхүүгийн салбарт +15 жил ажилсан туршлагатай мэргэжилтнүүдээс бүрдсэн.</p>
+                </div>
             </div>
+            
             <div className="profile-image-container">
                 <div className='profile-info'>
                     <img src={Profile} alt="person-image" />

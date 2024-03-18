@@ -6,6 +6,26 @@ import Profile from '../assets/profile.png'
 
 
 
+
+function AboutUsPage() {
+    const [activeButton, setActiveButton] = useState(1);
+
+    return (
+        <>
+            <div className="about-us-page">
+                <div className={`about-text-container ${activeButton === 1 ? 'visible' : 'hidden'}`}>
+                    <BidniiTuhai />
+                </div>
+                <div className={`hamt-olon-container ${activeButton === 2 ? 'visible' : 'hidden'}`}>
+                    <HamtOlon />
+                </div>
+                <ButtonToggle activeButton={activeButton} setActiveButton={setActiveButton} />
+            </div>
+        </>
+    );
+}
+
+
 const AboutUs = () => {
     return (
         <div className="about-container">
@@ -15,13 +35,13 @@ const AboutUs = () => {
                 </p>
                 <button id="AriljaandButton">АРИЛЖААНД ОРОЛЦОХ</button>
             </div>
-            <BidniiTuhai />
-            < HamtOlon />
-            <ButtonToggle />
+            <AboutUsPage />
         </div>
-    )
-}
-export default AboutUs
+    );
+};
+export default AboutUs;
+
+
 
 const BidniiTuhai = () => {
     return (
@@ -51,85 +71,78 @@ const HamtOlon = () => {
 
     return (
         <div className="hamt-olon-container">
+            <span id='text-hamtolon'>Хамт олон</span>
             <div>
-                <span id='text-hamt-olon'>Хамт олон</span>
-                <div>
-                    <span>Ажлын туршлага</span>
-                    <p>Манай хамт олон санхүүгийн салбарт +15 жил ажилсан туршлагатай мэргэжилтнүүдээс бүрдсэн.</p>
+                <span>Ажлын туршлага</span>
+                <p>Манай хамт олон санхүүгийн салбарт +15 жил ажилсан туршлагатай мэргэжилтнүүдээс бүрдсэн.</p>
+            </div>
+            <div className="profile-image-container">
+                <div className='profile-info'>
+                    <img src={Profile} alt="person-image" />
+                    <span className="text">{namePosition.firstName}</span>
+                    <span className='text'>{namePosition.position}</span>
                 </div>
-                <div className="profile-image-container">
-                    <div className='profile-info'>
-                        <img src={Profile} alt="person-image" />
-                        <span className="name">{namePosition.firstName}</span>
-                        <span className='position'>{namePosition.position}</span>
-                    </div>
-                    <div className='profile-info'>
-                        <img src={Profile} alt="person-image" />
-                        <span className="name">{namePosition.firstName}</span>
-                        <span className='position'>{namePosition.position}</span>
-                    </div>
-                    <div className='profile-info'>
-                        <img src={Profile} alt="person-image" />
-                        <span className="name">{namePosition.firstName}</span>
-                        <span className='position'>{namePosition.position}</span>
-                    </div>
-                    <div className='profile-info'>
-                        <img src={Profile} alt="person-image" />
-                        <span className="name">{namePosition.firstName}</span>
-                        <span className='position'>{namePosition.position}</span>
-                    </div>
-                    <div className='profile-info'>
-                        <img src={Profile} alt="person-image" />
-                        <span className="name">{namePosition.firstName}</span>
-                        <span className='position'>{namePosition.position}</span>
-                    </div>
-                    <div className='profile-info'>
-                        <img src={Profile} alt="person-image" />
-                        <span className="name">{namePosition.firstName}</span>
-                        <span className='position'>{namePosition.position}</span>
-                    </div>
-                    <div className='profile-info'>
-                        <img src={Profile} alt="person-image" />
-                        <span className="name">{namePosition.firstName}</span>
-                        <span className='position'>{namePosition.position}</span>
-                    </div>
-                    <div className='profile-info'>
-                        <img src={Profile} alt="person-image" />
-                        <span className="name">{namePosition.firstName}</span>
-                        <span className='position'>{namePosition.position}</span>
-                    </div>
-                    <div className='profile-info'>
-                        <img src={Profile} alt="person-image" />
-                        <span className="name">{namePosition.firstName}</span>
-                        <span className='position'>{namePosition.position}</span>
-                    </div>
+                <div className='profile-info'>
+                    <img src={Profile} alt="person-image" />
+                    <span className="text">{namePosition.firstName}</span>
+                    <span className='text'>{namePosition.position}</span>
+                </div>
+                <div className='profile-info'>
+                    <img src={Profile} alt="person-image" />
+                    <span className="text">{namePosition.firstName}</span>
+                    <span className='text'>{namePosition.position}</span>
+                </div>
+                <div className='profile-info'>
+                    <img src={Profile} alt="person-image" />
+                    <span className="text">{namePosition.firstName}</span>
+                    <span className='text'>{namePosition.position}</span>
+                </div>
+                <div className='profile-info'>
+                    <img src={Profile} alt="person-image" />
+                    <span className="text">{namePosition.firstName}</span>
+                    <span className='text'>{namePosition.position}</span>
+                </div>
+                <div className='profile-info'>
+                    <img src={Profile} alt="person-image" />
+                    <span className="text">{namePosition.firstName}</span>
+                    <span className='text'>{namePosition.position}</span>
+                </div>
+                <div className='profile-info'>
+                    <img src={Profile} alt="person-image" />
+                    <span className="text">{namePosition.firstName}</span>
+                    <span className='text'>{namePosition.position}</span>
+                </div>
+                <div className='profile-info'>
+                    <img src={Profile} alt="person-image" />
+                    <span className="text">{namePosition.firstName}</span>
+                    <span className='text'>{namePosition.position}</span>
+                </div>
+                <div className='profile-info'>
+                    <img src={Profile} alt="person-image" />
+                    <span className="text">{namePosition.firstName}</span>
+                    <span className='text'>{namePosition.position}</span>
                 </div>
             </div>
         </div>
     )
 }
 
-const ButtonToggle = () => {
-    const [activeButton, setActiveButton] = useState(1);
-
-    const handleButtonClick = (buttonNumber) => {
-        setActiveButton(buttonNumber);
-    };
-
+const ButtonToggle = ({ activeButton, setActiveButton }) => {
     return (
         <div className="button-container">
             <button
                 className={activeButton === 1 ? 'active' : ''}
-                onClick={() => handleButtonClick(1)}
+                onClick={() => setActiveButton(1)}
                 id='slide-button'
             >
             </button>
             <button
                 className={activeButton === 2 ? 'active' : ''}
-                onClick={() => handleButtonClick(2)}
+                onClick={() => setActiveButton(2)}
                 id='slide-button'
             >
             </button>
         </div>
     );
 };
+

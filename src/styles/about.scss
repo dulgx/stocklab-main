@@ -22,7 +22,7 @@ $white: hsla(0, 0%, 100%, 1);
             height: 54px;
             text-align: center;
             font-weight: 300;
-            font-size: 20px;
+            font-size: 15px;
 
             b {
                 font-weight: 700;
@@ -67,7 +67,7 @@ $white: hsla(0, 0%, 100%, 1);
             flex-direction: column;
 
             h1 {
-                font-size: 32px;
+                font-size: 28px;
                 font-weight: 600;
             }
 
@@ -87,7 +87,7 @@ $white: hsla(0, 0%, 100%, 1);
             padding-top: 20px;
 
             h1 {
-                font-size: 24px;
+                font-size: 18px;
                 font-weight: 500;
                 font-family: 'Manrope', sans-serif;
                 color: $primary-green;
@@ -95,7 +95,7 @@ $white: hsla(0, 0%, 100%, 1);
 
             p {
                 line-height: 32px;
-                font-size: 16px;
+                font-size: 13px;
             }
         }
     }

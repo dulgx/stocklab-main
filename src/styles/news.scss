@@ -1,0 +1,46 @@
+$primary-black: hsla(180, 3%, 7%, 1);
+$primary-green: hsla(165, 99%, 39%, 1);
+$white: hsla(0, 0%, 100%, 1);
+
+.medeelel-container {
+    display: flex;
+    color: $white;
+    flex-direction: column;
+    background-image: url(../assets/background-bull.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    padding: 20px;
+
+    .medeelel-text {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .custom-border {
+        width: 40%;
+        border: 1px solid;
+        border-image-source: linear-gradient(90deg, #01C696 0.09%, rgba(1, 198, 150, 0) 100.09%);
+        border-image-slice: 1;
+        margin-top: 20px;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-row: 3;
+        margin-top: 20px;
+
+        section {
+            margin: 20px;
+            background-color: rgba(43, 48, 48, 0.6);
+            padding: 20px;
+            border-radius: 12px;
+
+            p {
+                width: 300px;
+            }
+        }
+    }
+}

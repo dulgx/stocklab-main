@@ -30,7 +30,7 @@ const Navigation = () => {
                             <NavLink to="/services">Үйлчилгээ <img src={down} alt="down" id='DownVector' /></NavLink>
                         </li>
                         <li>
-                            <NavLink to="/informations">Мэдээлэл</NavLink>
+                            <NavLink to="/news">Мэдээлэл</NavLink>
                         </li>
                         <li>
                             <NavLink to="/instructions">Заавар</NavLink>

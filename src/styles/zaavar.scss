@@ -2,10 +2,10 @@ $primary-black: hsla(180, 3%, 7%, 1);
 $primary-green: hsla(165, 99%, 39%, 1);
 $white: hsla(0, 0%, 100%, 1);
 
-.instructions-container{
+.instructions-container {
 
 
-    .dans-neeh{
+    .dans-neeh {
         background-color: $primary-green;
         height: 130px;
         display: flex;
@@ -15,17 +15,18 @@ $white: hsla(0, 0%, 100%, 1);
         background-image: url('../assets/line-ariljaand.png');
 
 
-        #Text{
+        #Text {
             font-size: 15px;
             max-width: 480px;
             font-weight: 200;
             line-height: 24px;
 
-            span{
+            span {
                 font-weight: 700;
             }
         }
-        button{
+
+        button {
             color: $white;
             padding: 15px 25px;
             background-color: $primary-green;
@@ -36,13 +37,83 @@ $white: hsla(0, 0%, 100%, 1);
     }
 
 
-    .zaavar-container{
+    #NID {
         display: flex;
-        align-items: center;
+        height: 70vh;
+        justify-content: center;
+        background: url('../assets/background-bull.png');
+        background-repeat: no-repeat;
+        background-position: center;
 
-        .info-container{
-            background-color: $white;
-            color: hsla(0, 0%, 47%, 1);
+        .zaavar-container {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            max-width: 1250px;
+
+            .left-right-icon {
+                padding: 10px;
+                background-color: $white;
+                border-radius: 50%;
+            }
+
+            .info-container {
+                background-color: hsl(0, 0%, 100%);
+                color: hsl(0, 0%, 47%);
+                height: 300px;
+                width: 300px;
+                margin: 20px;
+                padding: 26px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border-radius: 12px;
+                border-top-color: hsl(165, 99%, 39%);
+                border-top-width: 5px;
+
+                .header {
+                    display: flex;
+                    align-items: center;
+
+                    div {
+                        padding-left: 10px;
+
+                        p {
+                            color: rgba(90, 113, 132, 1);
+                        }
+
+                        h1 {
+                            font-size: 22px;
+                            color: $primary-green;
+                            letter-spacing: 0.2px;
+                            margin-top: -5px;
+                        }
+                    }
+
+                }
+
+                p {
+                    font-size: 13px;
+                }
+
+                .button-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    button {
+                        height: 45px;
+                        width: 188px;
+                        background-color: $primary-green;
+                        border-style: none;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        color: $white;
+                    }
+                }
+            }
         }
     }
 }

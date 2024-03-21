@@ -4,9 +4,6 @@ import '../styles/about.scss'
 import Profile from '../assets/profile.png'
 
 
-
-
-
 function AboutUsPage() {
     const [activeButton, setActiveButton] = useState(1);
 
@@ -19,8 +16,9 @@ function AboutUsPage() {
                 <div className={`hamt-olon-container ${activeButton === 2 ? 'visible' : 'hidden'}`}>
                     <HamtOlon />
                 </div>
-                <ButtonToggle activeButton={activeButton} setActiveButton={setActiveButton} />
+
             </div>
+            <ButtonToggle activeButton={activeButton} setActiveButton={setActiveButton} />
         </>
     );
 }
@@ -79,7 +77,7 @@ const HamtOlon = () => {
                     <p>Манай хамт олон санхүүгийн салбарт +15 жил ажилсан туршлагатай мэргэжилтнүүдээс бүрдсэн.</p>
                 </div>
             </div>
-            
+
             <div className="profile-image-container">
                 <div className='profile-info'>
                     <img src={Profile} alt="person-image" />

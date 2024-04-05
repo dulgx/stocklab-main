@@ -6,10 +6,9 @@ import Navigation from './pages/Navigation';
 import HeroComponent from './pages/HeroComponent';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutUs from './pages/Aboutus';
-import Services from './pages/Services';
 import News from './pages/News';
 import Instructions from './pages/Instructions';
-
+import Services from './pages/Services/Services';
 
 function App() {
   return (

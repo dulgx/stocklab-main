@@ -1,14 +1,14 @@
-
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: hsla(180, 3%, 7%, 1);
-    margin-top: 20px;
-    font-family: 'Manrope', sans-serif;
+  background-color: hsla(180, 3%, 7%, 1);
+  margin-top: 20px;
+  font-family: "Manrope", sans-serif;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

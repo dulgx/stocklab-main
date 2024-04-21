@@ -15,21 +15,25 @@ const PageOne = () => {
   };
 
   return (
-    <div className=" text-white w-4/5 justify-center">
-      <div className="text-up flex flex-col justify-center">
-        <h2>{items.title}</h2>
-        <p>{items.textMain}</p>
+    <div className=" text-white text-base mx-20 w-3/4 flex flex-col">
+      <div className="justify-center">
+        <h2 className="text-center text-4xl mb-10">{items.title}</h2>
+        <p className="text-center flex justify-center">
+          <span className="max-w-md">{items.textMain}</span>
+        </p>
       </div>
-      <div className="">
-        <h2>{items.title2}</h2>
-        <div className="flex">
-          <div>
-            <h4>{items.title3}</h4>
-            <p>{items.text3}</p>
+      <div>
+        <h2 className="text-center mt-16 mb-5 text-3xl flex justify-center">
+          <span className="max-w-xs">{items.title2}</span>
+        </h2>
+        <div className="sm:flex">
+          <div className="mx-10">
+            <h4 className="text-center mb-5 font-bold">{items.title3}</h4>
+            <p className="text-center font-extralight">{items.text3}</p>
           </div>
-          <div>
-            <h4>{items.title4}</h4>
-            <p>{items.text4}</p>
+          <div className="mx-10">
+            <h4 className="text-center mb-5 font-bold">{items.title4}</h4>
+            <p className="text-center font-extralight">{items.text4}</p>
           </div>
         </div>
       </div>

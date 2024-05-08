@@ -3,366 +3,345 @@ $primary-green: hsla(165, 99%, 39%, 1);
 $white: hsla(0, 0%, 100%, 1);
 
 .container {
-    color: white;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15%;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
 }
-
 
 nav {
-    background: $primary-black;
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-bottom: 10px;
+  background: $primary-black;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 10px;
 
-    .nav-elements {
-        display: flex;
-        justify-content: space-between;
+  .nav-elements {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-link-container {
+    #StocklabLogo {
+      height: 38px;
+      margin-right: 250px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19.12px;
+    }
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 140px;
     }
 
-    .nav-link-container {
-        #StocklabLogo {
-            height: 38px;
-            margin-right: 250px;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 19.12px;
-        }
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 12px;
+      font-weight: 400;
+      cursor: pointer;
     }
 
-    ul {
-        display: flex;
+    #DownVector {
+      margin-left: 5px;
+      height: 8px;
+    }
+  }
 
-        li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 140px;
-        }
+  div {
+    display: flex;
 
-        a {
-            text-decoration: none;
-            color: $white;
-            font-size: 12px;
-            font-weight: 400;
-            cursor: pointer;
-        }
+    .social-links {
+      align-items: center;
 
-        #DownVector {
-            margin-left: 5px;
-            height: 8px;
-        }
+      .social-logo {
+        height: 16px;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
     }
 
-    div {
-        display: flex;
-
-        .social-links {
-            align-items: center;
-
-            .social-logo {
-                height: 16px;
-                margin-top: 10px;
-                margin-right: 10px;
-            }
-        }
-
-        #LoginButton {
-            border: 1px solid $primary-green;
-            height: 35px;
-            color: white;
-            width: 120px;
-            border-radius: 12px;
-            background-color: transparent;
-            margin-top: 10px;
-        }
+    #LoginButton {
+      border: 1px solid $primary-green;
+      height: 35px;
+      color: white;
+      width: 120px;
+      border-radius: 12px;
+      background-color: transparent;
+      margin-top: 10px;
     }
+  }
 }
 
-
-
-
 .hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/background-bull.png");
+  background-repeat: no-repeat;
+  background-position-x: 150px;
+  background-size: contain;
+
+  .hero-text {
+    color: $white;
+    height: 300px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url('../assets/background-bull.png');
-    background-repeat: no-repeat;
-    background-position-x: 150px;
-    background-size: contain;
-    
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
 
-
-
-    .hero-text {
-        color: $white;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: transparent;
-
-        img {
-            height: 100px;
-            background-color: transparent;
-        }
-
-        p {
-            font-size: 18px;
-            font-weight: 400;
-            width: 350px;
-            line-height: 24.59px;
-            background-color: transparent;
-        }
-
-        button {
-            width: 235px;
-            height: 48px;
-            border-style: none;
-            background-color: $primary-green;
-            border-radius: 12px;
-            color: $white;
-            font-size: 17px;
-            font-weight: 700;
-            line-height: 23.94px;
-            letter-spacing: 0.4px;
-            cursor: pointer;
-        }
+    img {
+      height: 100px;
+      background-color: transparent;
     }
 
-    #Huvitsaatai {
-        width: 350px;
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      width: 350px;
+      line-height: 24.59px;
+      background-color: transparent;
     }
 
-    #HeroPerson {
-        width: 35%;
+    button {
+      width: 235px;
+      height: 48px;
+      border-style: none;
+      background-color: $primary-green;
+      border-radius: 12px;
+      color: $white;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 23.94px;
+      letter-spacing: 0.4px;
+      cursor: pointer;
     }
+  }
 
+  #Huvitsaatai {
+    width: 350px;
+  }
+
+  #HeroPerson {
+    width: 35%;
+  }
 }
 
 .card-frame {
+  display: flex;
+  margin-top: 55px;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  .marquee-container {
+    animation: marquee 15s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-250%);
+    }
+  }
+
+  #NoBackground {
+    background-color: $primary-black;
+  }
+
+  .market-card {
     display: flex;
-    margin-top: 55px;
-    margin-bottom: 20px;
-    overflow: hidden;
+    color: $white;
+    width: 280px;
+    height: 90px;
+    background-color: #1a1f1f;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
 
-    .marquee-container {
-        animation: marquee 15s linear infinite;
+    .card-info {
+      display: flex;
+      background-color: transparent;
+      align-items: center;
 
-    }
+      #StockLogo {
+        width: 38.75px;
+        height: 40px;
+        background-color: transparent;
+        margin-right: 12px;
+      }
 
-    @keyframes marquee {
-        0% {
-            transform: translateX(0%);
-        }
-
-        100% {
-            transform: translateX(-250%);
-        }
-    }
-
-    #NoBackground {
-        background-color: $primary-black;
-    }
-
-    .market-card {
-        display: flex;
-        color: $white;
-        width: 280px;
-        height: 90px;
-        background-color: #1A1F1F;
-        justify-content: center;
-        align-items: center;
-        border-radius: 12px;
-        margin-left: 20px;
-        margin-right: 20px;
-
-
-
-        .card-info {
-            display: flex;
-            background-color: transparent;
-            align-items: center;
-
-            #StockLogo {
-                width: 38.75px;
-                height: 40px;
-                background-color: transparent;
-                margin-right: 12px;
-            }
-
-            .card-height {
-                background-color: transparent;
-
-                div {
-                    background-color: transparent;
-                    margin: 5px;
-
-                    .stock-text {
-                        font-size: 12px;
-                        font-weight: 600;
-                        font-family: 'Poppins', sans-serif;
-                        background-color: transparent;
-                        margin: 5px;
-                    }
-
-                    #StockUp {
-                        height: 24px;
-                        background-color: $primary-green;
-                        border-radius: 24px;
-                        padding: 3px 1x 3px 1px;
-                    }
-                }
-
-                #StockPrice {
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 32px;
-                    background-color: transparent;
-                    margin: 5px;
-                }
-            }
-        }
+      .card-height {
+        background-color: transparent;
 
         div {
-            background-color: transparent;
+          background-color: transparent;
+          margin: 5px;
 
-            #Chart {
-                width: 102.4px;
-                background-color: transparent;
-                padding-left: 15px;
-            }
+          .stock-text {
+            font-size: 12px;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+            background-color: transparent;
+            margin: 5px;
+          }
+
+          #StockUp {
+            height: 24px;
+            background-color: $primary-green;
+            border-radius: 24px;
+            padding: 3px 1x 3px 1px;
+          }
         }
+
+        #StockPrice {
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+          background-color: transparent;
+          margin: 5px;
+        }
+      }
     }
 
-
+    div {
+      background-color: transparent;
+    }
+  }
 }
 
 @media (max-width: 1024px) {
-    body {
-        overflow: scroll;
-    }
+  body {
+    overflow: scroll;
+  }
 
-    .nav-right {
-        display: none;
-    }
+  .nav-right {
+    display: none;
+  }
 
-    .hero-section {
-        flex-direction: column-reverse;
-    }
+  .hero-section {
+    flex-direction: column-reverse;
+  }
 
-    #HeroPerson {
-        width: 50%;
-    }
+  #HeroPerson {
+    width: 50%;
+  }
 }
-
 
 /*  Partners, footer component   */
 
 .partners-footer {
+  .partners-container {
+    display: flex;
+    height: 450px;
+    width: 100%;
+    flex-direction: column;
+    background-color: $primary-green;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../assets/Frame1-hamtragch.png"),
+      url("../assets/Frame2-hamtragch.png"),
+      url("../assets/Layer-hamtragch.png");
+    background-repeat: no-repeat;
+    background-size: 220px, 380px, cover;
+    background-position: right, top left;
+  }
 
-    .partners-container {
-        display: flex;
-        height: 450px;
-        width: 100%;
-        flex-direction: column;
-        background-color: $primary-green;
-        justify-content: space-evenly;
-        align-items: center;
-        background-image: url('../assets/Frame1-hamtragch.png'), url('../assets/Frame2-hamtragch.png'), url('../assets/Layer-hamtragch.png');
-        background-repeat: no-repeat;
-        background-size: 220px, 380px, cover;
-        background-position: right, top left;
+  #HamtragchBaiguullaga {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 56px;
+  }
 
-    }
+  .partners-logo-container {
+    height: 180px;
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
 
-    #HamtragchBaiguullaga {
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: $white;
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 56px;
-    }
+    .slide-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      animation: 15s slide infinite linear;
 
-    .partners-logo-container {
-        height: 180px;
-        width: 100%;
-        background-color: hsla(0, 0%, 100%, 0.5);
-        display: flex;
-        overflow: hidden;
-        white-space: nowrap;
-
-        .slide-container {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            animation: 15s slide infinite linear;
-
-            .partners-logo {
-                height: 45px;
-                margin: 0 35px;
-
-                @keyframes slide {
-                    from {
-                        transform: translateX(0);
-                    }
-                    to {
-                        transform: translateX(-100%);
-                    }
-                }
-            }
-        }
-        #biglogo {
-            height: 85px;
-        }
-    }
-    .footer-section{
-        background-image: url('../assets/background-bull.png'), url('../assets/background-bull.png');
-        background-size: 650px, 850px;
-        background-position-y: -50px, -150px;
-        background-position-x: 1050px, -430px;
-        background-repeat: no-repeat;
-    
-    .footer-container {
-        display: flex;
-        justify-content: space-around;
-        color: $white;
-        font-size: 14px;
-        padding-top: 55px;
-        
-
-        .contact-info {
-            width: 302px;
-
-            div{
-                display: flex;
-                margin-bottom: 20px;
-            }
-        }
-    }
-}
-    
-    .copyright{
-        background-color: hsla(162, 73%, 33%, 1);
-        display: flex;
-        align-items: center;
-        font-size: 11px;
+      .partners-logo {
         height: 45px;
-        width: 100%;
-        justify-content: space-evenly;
-        
-        p{
-            color: $white;
-            max-width: 215px;
+        margin: 0 35px;
+
+        @keyframes slide {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-100%);
+          }
         }
-        
+      }
     }
+    #biglogo {
+      height: 85px;
+    }
+  }
+  .footer-section {
+    background-image: url("../assets/background-bull.png"),
+      url("../assets/background-bull.png");
+    background-size: 650px, 850px;
+    background-position-y: -50px, -150px;
+    background-position-x: 1050px, -430px;
+    background-repeat: no-repeat;
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      color: $white;
+      font-size: 14px;
+      padding-top: 55px;
+
+      .contact-info {
+        width: 302px;
+
+        div {
+          display: flex;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    background-color: hsla(162, 73%, 33%, 1);
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    height: 45px;
+    width: 100%;
+    justify-content: space-evenly;
+
+    p {
+      color: $white;
+      max-width: 215px;
+    }
+  }
 }

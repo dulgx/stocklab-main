@@ -15,7 +15,7 @@ const Navigation = () => {
 
   return (
     <nav>
-      <div className="nav-elements flex flex-row m-5">
+      <div className="nav-elements flex flex-row m-5 w-full justify-between">
         <div>
           <NavLink to="/">
             {" "}
@@ -30,7 +30,10 @@ const Navigation = () => {
             </li>
             <li>
               <NavLink to="/services">
-                Үйлчилгээ <img src={down} alt="down" id="DownVector" />
+                <div className="flex">
+                  Үйлчилгээ{" "}
+                  <img src={down} alt="down" id="DownVector" className="mt-1" />
+                </div>
               </NavLink>
             </li>
             <li>

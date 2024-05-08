@@ -32,30 +32,6 @@ nav {
     }
   }
 
-  ul {
-    display: flex;
-
-    li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 140px;
-    }
-
-    a {
-      text-decoration: none;
-      color: $white;
-      font-size: 12px;
-      font-weight: 400;
-      cursor: pointer;
-    }
-
-    #DownVector {
-      margin-left: 5px;
-      height: 8px;
-    }
-  }
-
   div {
     display: flex;
 
@@ -100,14 +76,6 @@ nav {
 
     img {
       height: 100px;
-      background-color: transparent;
-    }
-
-    p {
-      font-size: 18px;
-      font-weight: 400;
-      width: 350px;
-      line-height: 24.59px;
       background-color: transparent;
     }
 

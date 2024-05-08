@@ -15,44 +15,47 @@ const Navigation = () => {
 
   return (
     <nav>
-      <div className="nav-elements flex flex-row m-5 w-full justify-between">
-        <div>
+      <div className="nav-elements flex flex-row w-full py-5 justify-between lg:grid lg:place-items-center">
+        <div className=" ">
           <NavLink to="/">
             {" "}
-            <img id="StocklabLogo" src={stocklabLogo} alt="stocklab-logo" />
+            <img src={stocklabLogo} alt="stocklab-logo" className=" w-40" />
           </NavLink>
         </div>
 
-        <div>
-          <ul className="nav-link-container">
-            <li>
-              <NavLink to="aboutus">Бидний тухай</NavLink>
-            </li>
-            <li>
-              <NavLink to="/services">
-                <div className="flex">
-                  Үйлчилгээ{" "}
-                  <img src={down} alt="down" id="DownVector" className="mt-1" />
-                </div>
+        <div className=" lg:hidden gap-5 justify-center content-center">
+          <ul className=" text-white flex items-center">
+            <li className=" mx-5">
+              <NavLink to="aboutus" key={1}>
+                <span className="text-sm">Бидний тухай</span>
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/news">Мэдээлэл</NavLink>
+            <li className=" mx-5">
+              <NavLink to="/services" key={2}>
+                <span className="text-sm">Үйлчилгээ</span>
+              </NavLink>
             </li>
-            <li>
-              <NavLink to="/instructions">Заавар</NavLink>
+            <li className=" mx-5">
+              <NavLink to="/news" className="text-sm key={3}">
+                <span className="text-sm">Мэдээлэл</span>
+              </NavLink>
+            </li>
+            <li className=" mx-5">
+              <NavLink to="/instructions" key={4}>
+                <span className="text-sm">Заавар</span>
+              </NavLink>
             </li>
           </ul>
 
-          <div className="social-links">
-            <a href="#">
+          <div className="flex justify-center items-center">
+            <a href="#" className="mx-1">
               <img
                 className="social-logo"
                 src={facebookLogo}
                 alt="facebook-logo"
               />
             </a>
-            <a href="#">
+            <a href="#" className="mx-1">
               <img
                 className="social-logo"
                 src={instaLogo}
@@ -60,7 +63,9 @@ const Navigation = () => {
               />
             </a>
           </div>
-          <button id="LoginButton">Нэвтрэх</button>
+          <button className="text-white text-sm border-2  border-green-400 px-5 rounded-xl">
+            Нэвтрэх
+          </button>
         </div>
       </div>
     </nav>

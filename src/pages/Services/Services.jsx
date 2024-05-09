@@ -5,7 +5,7 @@ import image1 from "./assets/background-bull.png";
 
 const Services = () => {
   return (
-    <div className="container mx-auto lg:mt-36 ">
+    <div className="flex flex-row items-center justify-center h-[85vh]">
       <img
         src={leftIcon}
         alt="left icon"

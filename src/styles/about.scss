@@ -2,190 +2,175 @@ $primary-black: hsla(180, 3%, 7%, 1);
 $primary-green: hsla(165, 99%, 39%, 1);
 $white: hsla(0, 0%, 100%, 1);
 
-
 .about-us-page {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .about-container {
-    color: $white;
-    width: 100%;
+  color: $white;
+  width: 100%;
 
+  /* ariljaand oroltsoh section*/
+  .ariljaand-oroltsoh {
+    background-color: $primary-green;
+    display: flex;
+    min-height: 132px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/line-ariljaand.png");
+    padding: 20px;
 
-    /* ariljaand oroltsoh section*/
-    .ariljaand-oroltsoh {
-        background-color: $primary-green;
-        display: flex;
-        min-height: 132px;
-        justify-content: center;
-        align-items: center;
-        background-image: url('../assets/line-ariljaand.png');
-        padding: 20px;
-
-        p {
-            width: 848px;
-            height: 54px;
-            text-align: center;
-            font-weight: 300;
-            font-size: 15px;
-
-            b {
-                font-weight: 700;
-            }
-        }
-
-        #AriljaandButton {
-            height: 57px;
-            width: 258px;
-            background-color: $primary-green;
-            border: 2px solid #E6E8EC;
-            border-radius: 12px;
-            color: $white;
-            font-family: "Open Sans", sans-serif;
-            box-shadow: 0 0 20px rgba(230, 232, 236, 1);
-            letter-spacing: 2.1px;
-            cursor: pointer;
-            margin-left: 20px;
-        }
+    p {
+      b {
+        font-weight: 700;
+      }
     }
 
-    .about-text-container.visible,
-    .hamt-olon-container.visible {
-        display: flex;
+    #AriljaandButton {
+      height: 57px;
+      width: 258px;
+      background-color: $primary-green;
+      border: 2px solid #e6e8ec;
+      border-radius: 12px;
+      color: $white;
+      font-family: "Open Sans", sans-serif;
+      box-shadow: 0 0 20px rgba(230, 232, 236, 1);
+      letter-spacing: 2.1px;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+  }
+
+  .about-text-container.visible,
+  .hamt-olon-container.visible {
+    display: flex;
+  }
+
+  .about-text-container.hidden,
+  .hamt-olon-container.hidden {
+    display: none;
+  }
+
+  /* bidnii tuhai */
+  .about-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    .bidnii-tuhai-text {
+      width: 288px;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+      }
+
+      .custom-border {
+        width: 208px;
+        border: 1px solid;
+        border-image-source: linear-gradient(
+          90deg,
+          #01c696 0.09%,
+          rgba(1, 198, 150, 0) 100.09%
+        );
+        border-image-slice: 1;
+      }
     }
 
-    .about-text-container.hidden,
-    .hamt-olon-container.hidden {
-        display: none;
+    .about-long-text {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 683px;
+      padding-top: 20px;
+    }
+  }
+
+  /*  hamt olon */
+  .hamt-olon-container {
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1220px;
+
+    .first-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
+    #text-hamtolon {
+      font-size: 32px;
+      font-weight: 400;
+    }
 
-    /* bidnii tuhai */
-    .about-text-container {
+    .custom-border {
+      width: 208px;
+      border: 1px solid;
+      border-image-source: linear-gradient(
+        90deg,
+        #01c696 0.09%,
+        rgba(1, 198, 150, 0) 100.09%
+      );
+      border-image-slice: 1;
+      margin-bottom: 25px;
+    }
+
+    div {
+      span {
+        color: $primary-green;
+        font-weight: 500;
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    .profile-image-container {
+      display: ruby;
+      width: auto;
+
+      .profile-info {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 20px;
+        margin: 25px;
+      }
 
-        .bidnii-tuhai-text {
-            width: 288px;
-            display: flex;
-            flex-direction: column;
+      img {
+        width: 135px;
+      }
 
-            h1 {
-                font-size: 28px;
-                font-weight: 600;
-            }
+      .text {
+        font-size: 16px;
+        color: $white;
+      }
+    }
+  }
 
-            .custom-border {
-                width: 208px;
-                border: 1px solid;
-                border-image-source: linear-gradient(90deg, #01C696 0.09%, rgba(1, 198, 150, 0) 100.09%);
-                border-image-slice: 1;
-            }
-        }
+  /* bidnii tuhai, hamt olon slider button */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 
-        .about-long-text {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            max-width: 683px;
-            padding-top: 20px;
-
-            h1 {
-                font-size: 18px;
-                font-weight: 500;
-                font-family: 'Manrope', sans-serif;
-                color: $primary-green;
-            }
-
-            p {
-                line-height: 32px;
-                font-size: 18px;
-            }
-        }
+    #slide-button {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border-style: none;
+      margin: 3px;
+      cursor: pointer;
     }
 
-
-    /*  hamt olon */
-    .hamt-olon-container {
-        flex-direction: column;
-        padding: 20px;
-        max-width: 1220px;
-
-        .first-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #text-hamtolon {
-            font-size: 32px;
-            font-weight: 400;
-        }
-
-        .custom-border {
-            width: 208px;
-            border: 1px solid;
-            border-image-source: linear-gradient(90deg, #01C696 0.09%, rgba(1, 198, 150, 0) 100.09%);
-            border-image-slice: 1;
-            margin-bottom: 25px;
-        }
-
-        div {
-
-            span {
-                color: $primary-green;
-                font-weight: 500;
-                font-size: 24px;
-            }
-
-            p {
-                font-size: 16px;
-                font-weight: 600;
-            }
-        }
-
-        .profile-image-container {
-            display: ruby;
-            width: auto;
-
-            .profile-info {
-                display: flex;
-                flex-direction: column;
-                margin: 25px;
-            }
-
-            img {
-                width: 135px;
-            }
-
-            .text {
-                font-size: 16px;
-                color: $white;
-            }
-        }
+    .active {
+      background-color: $primary-green;
     }
-
-    /* bidnii tuhai, hamt olon slider button */
-    .button-container {
-        display: flex;
-        justify-content: center;
-        padding: 5px;
-
-        #slide-button {
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            border-style: none;
-            margin: 3px;
-            cursor: pointer;
-        }
-
-        .active {
-            background-color: $primary-green;
-        }
-    }
+  }
 }

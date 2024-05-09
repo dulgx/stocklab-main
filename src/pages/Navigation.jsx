@@ -15,13 +15,14 @@ const Navigation = () => {
 
   return (
     <nav>
-      <div className="nav-elements flex flex-row w-full py-5 justify-between lg:grid lg:place-items-center">
-        <div className=" ">
-          <NavLink to="/">
-            {" "}
-            <img src={stocklabLogo} alt="stocklab-logo" className=" w-40" />
-          </NavLink>
-        </div>
+      <div className="nav-elements flex flex-row w-full py-3 justify-between lg:grid lg:place-items-center">
+        <NavLink to="/">
+          <img
+            src={stocklabLogo}
+            alt="stocklab-logo"
+            className="sm:w-28 h-10 w-[150px]"
+          />
+        </NavLink>
 
         <div className=" lg:hidden gap-5 justify-center content-center">
           <ul className=" text-white flex items-center">

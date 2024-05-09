@@ -11,10 +11,10 @@ import emailIcon from "../assets/mail-icon.svg";
 
 const FooterPartnersComponent = () => {
   return (
-    <div className="partners-footer h-screen">
+    <div className="partners-footer ">
       <div className="partners-container">
-        <div id="HamtragchBaiguullaga">
-          <span>ХАМТРАГЧ БАЙГУУЛЛАГУУД </span>
+        <div className="flex flex-col items-center justify-center">
+          <span className="text-xl text-white ">ХАМТРАГЧ БАЙГУУЛЛАГУУД </span>
           <img src={lineHamtragch} alt="line" />
         </div>
 
@@ -92,11 +92,11 @@ const FooterPartnersComponent = () => {
       </div>
 
       <div className="footer-section sm:flex sm:flex-row">
-        <div className="footer-container">
+        <div className="footer-container sm:flex sm:flex-col sm:items-center sm:justify-center sm:w-full sm:text-xs">
           <div>
             <img src={stocklabLogo} alt="stocklab" />
           </div>
-          <div className="contact-info">
+          <div className="contact-info sm:m-5 sm:flex sm:flex-col sm:items-center sm:justify-center ">
             <div>
               <img src={mobileIcon} alt="mobile icon" />
               <p>7777-5155</p>
@@ -109,14 +109,14 @@ const FooterPartnersComponent = () => {
               Даваа-Баасан <br />
               9:00-18:00
             </div>
-            <div>
+            <div className="sm:text-center">
               Монгол улс, Улаанбаатар хот, Чингэлтэй дүүрэг, 1 хороо, Жуулчны
               гудамж, Арт хаус центр, 5 давхар
             </div>
           </div>
         </div>
       </div>
-      <div className="copyright">
+      <div className="copyright sm:flex sm:flex-col sm:items-center sm:justify-center">
         <p>2022 © StockLab. ALL Rights Reserved.</p>
         <p>ХУУЛЬ, ЭРХ ЗҮЙ &nbsp; &nbsp; &nbsp; ХОЛБОО БАРИХ</p>
       </div>
